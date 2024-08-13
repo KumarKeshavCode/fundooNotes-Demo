@@ -1,3 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+</style>
+<body>
+  <div class = "login-container" >
+      <div class="split">
+        <div id="img">
+          <img src="../../assets/google-logo.png" alt="" srcset="" height="44px" width="44px">
+        </div>
+        <div id="text1">
+          <h1>Sign in</h1>
+        </div>
+        <div id="text2">
+         <h3>Use your Google Account</h3>
+        </div>
+
+      </div>
+      <div class="split">
+        
+        <div id="emailinput">
+          
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Email or Phone</mat-label>
+              <input matInput placeholder="Placeholder">
+              
+              <mat-hint  id="forgot-email" ><a routerLink="/register"><button mat-button id="forget-btn">Forgot Email?</button>  </a>       
+              </mat-hint>
+            </mat-form-field>
+          </p>
+          
+        </div>
+<!--        
+        <div id="forgot-email"  style="margin-top: 0%;" >
+            
+            <a routerLink="/register"><button mat-button id="forget-btn">Forgot Email?</button>  </a>       
+        </div> -->
+        <div id="msg">
+          <h3>Not your computer? Use Guest mode to sign in privately.</h3>
+          <a href="https://support.google.com/chrome/answer/6130773?hl=en" target="_blank">
+            <button mat-button  id="learnmore">Learn more about using Guest mode </button>
+        
+
+          </a>
+          </div>
+        
+        <div id="btn" style="margin-top: 15px;">
+          <a routerLink="/register"><button mat-button id="btn1">Create account</button></a>
+          
+          <button mat-flat-button id="btn2">Next</button>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
+
+
 <!-- 
 
 

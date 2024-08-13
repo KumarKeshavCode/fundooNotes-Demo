@@ -1,3 +1,122 @@
+html,body{
+    background-color: aliceblue;
+}
+
+ .login-container {
+    //i want this container in center position
+    margin-top: 4%;
+    margin-left: 15%;
+    width: 68%;
+    height: 73%;
+    border-radius: 25px;
+    background-color: white ;
+    display: flex;
+    overflow: hidden;
+}
+.split{
+    // border-radius: 25px;
+    width: 50%;
+    height: 100%;
+    //position: relative;
+    //background-color: aqua;
+}
+
+#img{
+    width: 10px;
+    height: 10px;
+    padding-top: 10%;
+    padding-left: 10%;
+    //background-color: blue;
+}
+
+#text1{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 14%;
+    padding-left: 10%;
+    //background-color: green;
+}
+
+
+#text2{
+    font-size: 20px;
+    font-weight: bold;
+   
+    padding-left: 10%;
+    //background-color: green;
+}
+
+
+#emailinput{
+   
+    margin-top: 27%;
+    width: 60;
+    margin-bottom: 0px;
+}
+
+#msg {
+    
+    margin-right: 2px;
+    margin-top: 10%;
+    margin-bottom: 0;
+   
+}
+
+mat-form-field{
+    width: 90%;
+}
+
+
+#forgot-email{
+    margin-left: -19px;
+     
+    
+}
+
+
+
+#forget-btn{
+    padding: 30;
+    margin-left: -5px; 
+    color: rgb(73, 73, 252);
+}
+
+#learnmore{
+    margin-left: -7px;
+    margin-top: -35px;
+    color: rgb(57, 57, 241);
+    border-radius: 20%;
+    border-radius: 20%;
+    
+}
+
+#btn{
+    // display: flex;
+    // justify-content: space-around;
+}
+#btn1{
+   margin-left: 40%;
+    border-radius: 20px;
+    color: blue;
+    
+}
+
+
+#btn2{
+   color: white;
+   width: 80px;
+   height: 42px;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
+    background-color: rgb(15, 15, 226);
+}
+
+// h1 {
+//     font-weight: bold;
+//     height: 2%;
+//   }
+
 
 // *{
 //     margin: 0;
