@@ -58,88 +58,34 @@
         </div>
       </div>
   </div>
-</body>
-</html>
+
+  <div id="footer">
+    <div  >
+
+      <mat-form-field  id="selectlanguage">
+        <!-- <mat-label>State</mat-label> -->
+        <mat-select >
+         
+          <mat-option *ngFor="let state of states" [value]="states">{{ state }}</mat-option>
+        </mat-select>
+      </mat-form-field>
 
 
-<!-- 
 
-
-<link rel="stylesheet" href="login.component.scss" lang="scss">
-
-<div class="login-container">
-
-    <div>
-        <div class="google-logo">
-           
-      
-              <img src=".../assets/google-logo.png" alt="Google Logo">
-            </div>
-      
-            <h2>Sign in</h2>
-            <p>Use your Google Account</p>
     </div>
-    <div>
-    
-        <mat-card class="login-card">
-      
-
-            <form>
-              <mat-form-field appearance="outline" class="full-width">
-                <mat-label>Email or phone</mat-label>
-                <input matInput type="email" required>
-                <mat-icon matSuffix>email</mat-icon>
-              </mat-form-field>
-              <div class="forgot-email">
-                <a href="#">Forgot email?</a>
-              </div>
-              <p>Not your computer? Use Guest mode to sign in privately. <a href="#">Learn more</a></p>
-              <div class="actions">
-                <a href="#" class="create-account">Create account</a>
-                <button mat-raised-button color="primary" type="submit">Next</button>
-              </div>
-            </form>
-          </mat-card>
+    <div id="footerbtn">
+      <div>
+        <button mat-button>Help</button>
+      </div>
+      <div>
+        <button mat-button>Privacy</button>
+      </div>
+      <div>
+        <button mat-button>Terms</button>
+      </div>
     </div>
 
   </div>
-  
+</body>
+</html>
 
-  
-  <footer>
-    <div class="footer-links">
-      <a href="#">Help</a>
-      <a href="#">Privacy</a>
-      <a href="#">Terms</a>
-    </div>
-    <div class="language-select">
-      <mat-select>
-        <mat-option value="en-uk">English (United Kingdom)</mat-option>
-        <mat-option value="en-us">English (United States)</mat-option>
-      </mat-select>
-    </div>
-  </footer> -->
-
-  <!--
-
-  <mat-card class="example-card" appearance="outlined">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Shiba Inu</mat-card-title>
-      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="../../assets/google-logo.png" alt="Photo of a Shiba Inu">
-    <mat-card-content>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
-    </mat-card-actions>
-  </mat-card>
-  
--->
