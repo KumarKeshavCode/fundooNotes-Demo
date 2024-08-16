@@ -1,0 +1,82 @@
+.main-container {
+
+    padding: 8px 25px;
+    box-shadow: inset 0 -1px 0 0 #5f6368;
+   // background-color: red;
+   //display: flex;
+    
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.fst-col{
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+.col2{
+    margin-left: 20px;
+    display: flex;
+}
+
+.search-icon{
+    
+    margin-left: 9%;
+    width: 50%;
+
+    
+    position: absolute;
+  left: 10%;
+  color :gray;
+    
+}
+input:focus {
+    outline: none;
+    border: white;
+}
+.form{
+    border: #5f6368;
+    color: red;
+}
+
+
+
+mat-form-field{
+   // background-color: red;
+    width: 90%;
+    height: 2%;
+    
+    border-radius: 20px;
+   
+    
+}
+
+.btn-container{
+    width: 90%;
+   // background-color: red;
+    margin-right: 79px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+.th-col{
+    margin-right: 25px;
+    width: 190px;
+ //   background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+}
+.app{
+    width: 30px;
+    height: 30px;
+}
+
+
+}  
+

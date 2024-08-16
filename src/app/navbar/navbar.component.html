@@ -1,0 +1,62 @@
+
+
+
+<section  class="main-container">
+<div class="navbar">
+    <div class="fst-col">
+        <div>
+            <mat-icon>menu</mat-icon>
+        </div>
+        <div>
+            <div class="keep-img">
+                <img src="../../assets/keep.png" width="40"
+                     alt="keep">
+            </div>
+        </div>
+        <div >
+            <span class="text"><h1>Keep</h1></span>
+        </div>
+    </div>
+    <div class="col2">
+        <div class="search-icon">
+            <p>
+                
+                <mat-form-field appearance="outline">
+
+                    <mat-icon matPrefix>search</mat-icon>
+                  <input matInput placeholder="Search"  [(ngModel)]="searchInput" (input)="searchInputchange($event)" (click)="clearInput()">
+                  
+                  <mat-icon matSuffix *ngIf="searchInput" (click)="clearInput()" >close</mat-icon>
+
+                </mat-form-field>
+              </p>
+        </div>
+        <div class="btn-container">
+            <div>
+                <mat-icon class="ref">refresh</mat-icon>
+            </div>
+
+            <div>
+                <mat-icon>grid_on</mat-icon>
+            </div>
+            <div><mat-icon>settings</mat-icon></div>           
+                                
+
+        </div>
+        <div class="th-col">
+            <div class="app">
+                <img src="../../assets/apps_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="" style="width: 40px;height: 40px;">
+            </div>
+            <div class="user-pic-container">
+                <img src="../../assets/keshav_photo.jpg" alt="" style="width: 45px;height: 45px;border-radius: 50px;">
+            </div>
+        </div>
+    </div>
+    <!-- <div class="th-col">
+        <div class="app"></div>
+        <div class="user-pic-container">
+            <img src="" alt="">
+        </div>
+    </div> -->
+</div>
+</section>

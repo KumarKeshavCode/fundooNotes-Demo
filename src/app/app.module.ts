@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
-import {Component} from '@angular/core';
+
+
 
 
 
@@ -20,15 +22,22 @@ import { RegisterComponent } from './register/register.component';
 import {  MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import {MatDividerModule} from '@angular/material/divider';
-
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 import {FormsModule} from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
+
+
+import {MatToolbarModule} from '@angular/material/toolbar';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +51,10 @@ import {FormsModule} from '@angular/forms';
     MatOptionModule,
     MatButtonModule,
     MatDividerModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    MatSidenavModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
