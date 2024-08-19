@@ -10,7 +10,7 @@ export class HttpService {
   constructor(private http:HttpClient) { }
   getAllNotes(p0: string){
     console.log("working")
-    return this.http.get("https://fundoonotes.incubation.bridgelabz.com/api/notes/getNotesList?access_token=bb7Pl5YLGSCAFo0mOVlkP7LWtjysIlNLtBVHxqJWgwGReCEiaJqa9xIJS8JpfWzu") 
+    return this.http.get("https://fundoonotes.incubation.bridgelabz.com/api/notes/getNotesList?access_token=O2NvDmj9sZex9qWcRBWudsdHx5VmvvrWw5Yno4GQ5CTQEbNAixja8FBhaMWj4i7W") 
   }
 
   

@@ -1,5 +1,5 @@
 
-<div class="sidenav" >
+<div class="sidenav"  *ngIf="flag=== 'true'" >
     <div class="sidenavcontent" >
         <span style="display: flex; justify-content: flex-start; align-items: center; gap:20px ;margin-top: 20px;" [routerLink]="['/dashboard/input-note']" >
             <img src="../../assets/3246755_google_idea_keep_software_icon.png" alt="" style="width: 40px;height: 40px ;border-radius: 20px; background-color: white;">
@@ -33,6 +33,47 @@
        <span style="display: flex; justify-content: flex-start; align-items: center; gap:20px ">
         <img src="../../assets/delete_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt=""  style="width: 40px;height: 40px ;border-radius: 20px;">
         <span>Trash</span>
+    </span>
+    </div>
+</div>
+
+
+
+
+<div class="sidenav"  *ngIf="flag=== 'false'" >
+    <div class="sidenavcontent" >
+        <span style="display: flex; justify-content: flex-start; align-items: center; gap:20px ;margin-top: 20px;" [routerLink]="['/dashboard/input-note']" >
+            <img src="../../assets/3246755_google_idea_keep_software_icon.png" alt="" style="width: 40px;height: 40px ;border-radius: 20px; background-color: white;">
+        <!-- <span>Notes</span> -->
+    </span>
+    </div>
+    <br>
+    
+    <div class="sidenavcontent" >
+        <span style="display: flex; justify-content: flex-start; align-items: center; gap:20px;">
+            <img src="../../assets/notifications_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt=""  style="width: 40px;height: 40px ;border-radius: 20px;">
+        <!-- <span>Remainders</span> -->
+    </span>
+    </div>
+    <br>
+    <div class="sidenavcontent" >
+        <span style="display: flex; justify-content: flex-start; align-items: center; gap:20px ">
+            <img src="../../assets/edit_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt=""  style="width: 40px;height: 40px ;border-radius: 20px;">
+        <!-- <span>Edit labels</span> -->
+    </span>
+    </div>
+    <br>
+    <div class="sidenavcontent" >
+        <span style="display: flex; justify-content: flex-start; align-items: center; gap:20px " [routerLink]="['/dashboard/archive']">
+            <img src="../../assets/archive_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt=""  style="width: 40px;height: 40px ;border-radius: 20px;">
+        <!-- <span>Archive</span> -->
+    </span>
+    </div>
+    <br>
+    <div class="sidenavcontent" >
+       <span style="display: flex; justify-content: flex-start; align-items: center; gap:20px ">
+        <img src="../../assets/delete_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt=""  style="width: 40px;height: 40px ;border-radius: 20px;">
+        <!-- <span>Trash</span> -->
     </span>
     </div>
 </div>

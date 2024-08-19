@@ -23,13 +23,13 @@ import {FormsModule} from '@angular/forms';
 
 
 import {MatToolbarModule} from '@angular/material/toolbar';
-import { InputNoteComponent } from './dashboard/input-note/input-note.component';
+import { InputNoteComponent } from './input-note/input-note.component';
 import { BasicinfoComponent } from './basicinfo/basicinfo.component';
 
 // import { MatSlideToggleModule} from '@angular/material/slide-toggle';
 // import { ReactiveFormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { NotesContainerComponent } from './dashboard/notes-container/notes-container.component';
+import { NotesContainerComponent } from './notes-container/notes-container.component';
 import { DashboardComponent } from './dashboard/dashboard.component'; 
 import { NavbarComponent } from './dashboard/navbar/navbar.component';
 import { SidenavComponent } from './dashboard/sidenav/sidenav.component';
