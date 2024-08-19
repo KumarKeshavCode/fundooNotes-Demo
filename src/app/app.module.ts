@@ -2,12 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
-
-
-
-
-
-
+import {MatExpansionModule} from '@angular/material/expansion';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,10 +20,21 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatSidenavModule} from '@angular/material/sidenav';
 
 import {FormsModule} from '@angular/forms';
-import { NavbarComponent } from './navbar/navbar.component';
 
 
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { InputNoteComponent } from './dashboard/input-note/input-note.component';
+import { BasicinfoComponent } from './basicinfo/basicinfo.component';
+
+// import { MatSlideToggleModule} from '@angular/material/slide-toggle';
+// import { ReactiveFormsModule } from '@angular/forms';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { NotesContainerComponent } from './dashboard/notes-container/notes-container.component';
+import { DashboardComponent } from './dashboard/dashboard.component'; 
+import { NavbarComponent } from './dashboard/navbar/navbar.component';
+import { SidenavComponent } from './dashboard/sidenav/sidenav.component';
+import { ArchiveComponent } from './dashboard/archive/archive.component';
+
 
 
 
@@ -37,7 +43,14 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    NavbarComponent
+    NavbarComponent,
+    SidenavComponent,
+    InputNoteComponent,
+    BasicinfoComponent,
+    NotesContainerComponent,
+    DashboardComponent,
+    ArchiveComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -54,7 +67,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     FormsModule,
     HttpClientModule,
     MatSidenavModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatExpansionModule,
+    MatCheckboxModule,
+ 
   ],
   providers: [],
   bootstrap: [AppComponent]

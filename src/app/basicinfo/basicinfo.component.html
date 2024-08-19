@@ -1,0 +1,117 @@
+<body>
+    <div class="Body">
+      <div>
+        <div>
+            <img src="../../assets/google-logo.png" alt="" srcset="" height="65" width="65" style="margin-bottom: 10px;"/>
+        </div>
+        <div style="display: flex; justify-content: space-between">
+          <div>
+            <div>
+              <h1 style="font-family: sans-serif; font-size: 2.5rem; font-weight: '400'; padding-left: 10px;">
+                <p *ngIf="classValue == 'basicinfo'">Basic information</p>
+                <p *ngIf="classValue == 'username'">How you'll sign in</p>
+                <p *ngIf="classValue === 'password'">Create strong password</p>
+              </h1>
+                <h2 *ngIf="classValue === 'basicinfo'">Enter your birthday and gender</h2>
+                <h2 *ngIf="classValue === 'username'">Create a gmail account for signing in to your</h2>
+                <h2 *ngIf="classValue === 'username'">account</h2>
+                <h2 *ngIf="classValue === 'password'">Create a strong password with mix of letters,numbers</h2>
+                <h2 *ngIf="classValue === 'password'">and symbols</h2>
+            </div>
+          </div>
+          <!-- Right side -->
+          <div>
+            <!-- ----------date of birth and gender---- -->
+            <form action="submit" *ngIf="classValue === 'basicinfo'">
+            <div id="dateform">
+                <mat-form-field appearance="outline"  class="date">
+                    <mat-label>Month</mat-label>
+                    <mat-select [(value)]="selectedMonth">
+                        <mat-option *ngFor="let month of months" [value]="month">
+                            {{month}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="outline"  class="date">
+                    <mat-label>Day</mat-label >
+                    <input matInput placeholder="" />
+                </mat-form-field>
+                <mat-form-field appearance="outline"  class="date">
+                    <mat-label>Year</mat-label>
+                    <input matInput placeholder="" />
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="outline">
+                  <mat-label>Gender</mat-label>
+                  <mat-select [(value)]="selectedGender">
+                    <mat-option *ngFor="let gender of genders" [value]="gender">
+                        {{gender}}
+                    </mat-option>
+                </mat-select>
+                </mat-form-field>  
+            </div>
+            <div>
+                <button mat-button color=primary class="blue-button">
+                    Why we ask for birthday and gender
+                </button>
+            </div>
+              <div class="" style="display: flex; justify-content: end; text-align: center; font-weight: 400;" >
+                <a id="next" (click)="changePage($event)">
+                    Next
+                </a>
+              </div>
+            </form>
+          <!--------------  User Name   ---------------->
+
+            <form action="submit" *ngIf="classValue === 'username'">
+              <div>
+                <mat-form-field appearance="outline">
+                  <mat-label>Username</mat-label>
+                  <input matInput placeholder="" />
+                </mat-form-field>  
+              </div>
+              <div>
+                <p class="note" style="padding-bottom: 70px;">
+                  you can use letters, numbers & periods
+                </p>
+              </div>
+              <div class="" style="display: flex; justify-content: end; text-align: center; font-weight: 400;" >
+                <a id="next" (click)="changePage($event)">
+                    Next
+                </a>
+              </div>
+            </form>
+            
+
+            <!-- ------------------set password ------------- -->
+            
+            <form action="submit" *ngIf="classValue === 'password'">
+              <div>
+                <mat-form-field appearance="outline">
+                  <mat-label>Password</mat-label>
+                  <input matInput placeholder="" />
+                </mat-form-field>  
+              </div>
+              <div>
+                <mat-form-field appearance="outline">
+                  <mat-label>Confirm Password</mat-label>
+                  <input matInput placeholder="" />
+                </mat-form-field>
+              </div>
+              <mat-checkbox color="primary"  style="padding-bottom: 40px;">  
+                Show password
+              </mat-checkbox>
+              <div class="" style="display: flex; justify-content: end; text-align: center; font-weight: 400;" >
+                <a id="next" (click)="changePage($event)" >
+                    Next
+                </a>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  
+</body>
