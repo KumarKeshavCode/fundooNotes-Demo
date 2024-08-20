@@ -34,6 +34,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './dashboard/navbar/navbar.component';
 import { SidenavComponent } from './dashboard/sidenav/sidenav.component';
 import { ArchiveComponent } from './dashboard/archive/archive.component';
+import { RemindersComponent } from './dashboard/reminders/reminders.component';
+import { TrashComponent } from './dashboard/trash/trash.component';
 
 
 
@@ -50,6 +52,8 @@ import { ArchiveComponent } from './dashboard/archive/archive.component';
     NotesContainerComponent,
     DashboardComponent,
     ArchiveComponent,
+    RemindersComponent,
+    TrashComponent,
    
   ],
   imports: [

@@ -9,6 +9,7 @@ import { BasicinfoComponent } from './basicinfo/basicinfo.component';
 import { NotesContainerComponent } from './notes-container/notes-container.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ArchiveComponent } from './dashboard/archive/archive.component';
+import { TrashComponent } from './dashboard/trash/trash.component';
 const routes: Routes = [
 
   {'path': '', component: LoginComponent},
@@ -23,6 +24,9 @@ const routes: Routes = [
     },
     { 'path':'archive',
       component: ArchiveComponent
+    },
+    { 'path':'trash',
+      component: TrashComponent
     },
 
     ]
