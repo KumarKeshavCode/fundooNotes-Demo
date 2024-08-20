@@ -19,6 +19,9 @@ const routes: Routes = [
     path:'dashboard',
     component: DashboardComponent,
     children: [
+    { 'path':'',
+        component: InputNoteComponent
+    },
     { 'path':'input-note',
       component: InputNoteComponent
     },

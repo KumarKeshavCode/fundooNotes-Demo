@@ -74,7 +74,8 @@ import { TrashComponent } from './dashboard/trash/trash.component';
     MatToolbarModule,
     MatExpansionModule,
     MatCheckboxModule,
- 
+    MatFormFieldModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
