@@ -19,7 +19,7 @@ export class HttpService {
     console.log("API for login is working");
     console.log("email : ",email);
     console.log("password : ",password);
-    return  this.http.post('https://fundoonotes.incubation.bridgelabz.com/api/user/login', { email, password });
+    return  this.http.post('https://fundoonotes.incubation.bridgelabz.com/api/user/login', {"email": email, "password":password });
   }
 
   
