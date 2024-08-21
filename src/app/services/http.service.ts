@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -22,5 +23,11 @@ export class HttpService {
     return  this.http.post('https://fundoonotes.incubation.bridgelabz.com/api/user/login', {"email": email, "password":password });
   }
 
+
+  
+  SignUp(signupData: any) : Observable<any>{
+    console.log("API for Signup is working");
+    return this.http.post('https://fundoonotes.incubation.bridgelabz.com/api/user/userSignUp', signupData);
+  }
   
 }

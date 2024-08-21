@@ -37,8 +37,7 @@ import { ArchiveComponent } from './dashboard/archive/archive.component';
 import { RemindersComponent } from './dashboard/reminders/reminders.component';
 import { TrashComponent } from './dashboard/trash/trash.component';
 
-
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -75,6 +74,7 @@ import { TrashComponent } from './dashboard/trash/trash.component';
     MatExpansionModule,
     MatCheckboxModule,
     MatFormFieldModule,
+    ReactiveFormsModule
   
   ],
   providers: [],
