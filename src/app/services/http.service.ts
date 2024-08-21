@@ -6,13 +6,19 @@ import { Observable } from 'rxjs';
 })
 export class HttpService {
 
-
+  id=localStorage.getItem("id")
 
   constructor(private http:HttpClient) { }
   getAllNotes(){
     console.log("working")
-    return this.http.get("https://fundoonotes.incubation.bridgelabz.com/api/notes/getNotesList?access_token=O2NvDmj9sZex9qWcRBWudsdHx5VmvvrWw5Yno4GQ5CTQEbNAixja8FBhaMWj4i7W") 
+    return this.http.get("https://fundoonotes.incubation.bridgelabz.com/api/notes/getNotesList?access_token="+`${this.id}`) 
   }
+
+
+  addnewnote(title:any ,description:any){
+    return this.http.post("https://fundoonotes.incubation.bridgelabz.com/api/notes/addNotes?access_token="+`${this.id}`,{"title":title,"description":description})
+  }
+
 
 
   

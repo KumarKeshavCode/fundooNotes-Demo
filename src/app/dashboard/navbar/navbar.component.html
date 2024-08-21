@@ -16,13 +16,13 @@
         </div>
     </div>
     <div class="col2">
-        <div class="search-icon">
+        <div class="search-icon"  style="height: -100px; top : 5px ;"  >
             <p>
                 
-                <mat-form-field appearance="outline">
+                <mat-form-field   appearance="outline">
 
-                    <mat-icon matPrefix>search</mat-icon>
-                  <input matInput placeholder="Search"  [(ngModel)]="searchInput" (input)="searchInputchange($event)" (click)="clearInput()">
+                    <mat-icon matPrefix>search</mat-icon> 
+                  <input   matInput placeholder="Search"  [(ngModel)]="searchInput"  [(ngModel)]="searchInput" (input)="searchInputchange($event)" (click)="clearInput()">
                   
                   <mat-icon matSuffix *ngIf="searchInput" (click)="clearInput()" >close</mat-icon>
 

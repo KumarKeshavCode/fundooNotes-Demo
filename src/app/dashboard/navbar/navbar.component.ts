@@ -37,6 +37,8 @@ export class NavbarComponent {
     localStorage.removeItem('id');
   }
 
+  searchinput  :string =""; 
+
 
 
 }

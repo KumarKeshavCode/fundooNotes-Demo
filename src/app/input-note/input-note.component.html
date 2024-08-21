@@ -15,8 +15,40 @@
             </div>
         </div> </mat-panel-description>
       </mat-expansion-panel-header>
-      <p>This is the primary content of the panel.</p>
+      <div >
+        <div ><input name="title"[(ngModel)]="title" type="text" placeholder="Title"></div>
+        <div style="top: 5px;">
+          <input name="description" [(ngModel)]="description" type="text" (keypress)="submit($event)" placeholder="Discription">
+        </div>
+       
+      </div>
+     
+      
+      <div class="belowIcon">
+        <span class="material-symbols-outlined">
+            add_alert
+            </span>
+            <span class="material-symbols-outlined">
+                person_add
+                </span>
+
+                <span class="material-symbols-outlined">
+                    palette
+                    </span>
+
+                    <span class="material-symbols-outlined">
+                        image
+                        </span>
+
+                        <span class="material-symbols-outlined">
+                            archive
+                            </span>
+                            <span class="material-symbols-outlined">
+                                more_vert
+                                </span>
+    </div>
     </mat-expansion-panel>
+    
 </div>
 <div style="margin-top:20px;">
   <app-notes-container></app-notes-container>

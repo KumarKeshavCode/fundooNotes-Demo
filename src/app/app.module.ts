@@ -38,6 +38,8 @@ import { RemindersComponent } from './dashboard/reminders/reminders.component';
 import { TrashComponent } from './dashboard/trash/trash.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { SearchPipe } from './pipes/search.pipe';
+
 
 @NgModule({
   declarations: [
@@ -53,6 +55,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ArchiveComponent,
     RemindersComponent,
     TrashComponent,
+    SearchPipe,
    
   ],
   imports: [
