@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { HttpService } from '../services/http.service';
+import { DataService } from '../services/data/data.service';
 
 
 @Component({
@@ -9,8 +10,9 @@ import { HttpService } from '../services/http.service';
 })
 export class NotesContainerComponent implements OnInit {
   notesList: any = [];
+  @Input() searchInput: string = '';
 
-  constructor(private httpService: HttpService) {}
+  constructor(private httpService: HttpService, private dataService:DataService) {}
 
   ngOnInit(): void {
     this.httpService.getAllNotes().subscribe({
@@ -20,5 +22,9 @@ export class NotesContainerComponent implements OnInit {
       },
       error: (e) => {},
     });
+    this.dataService.currentData.subscribe((data : any) => {
+      this.searchInput = data;
+    });
   }
+
 }

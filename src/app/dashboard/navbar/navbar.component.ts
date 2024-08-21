@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { OpensidenvService } from 'src/app/services/opensidenav/opensidenv.service';
 import { Router } from '@angular/router';
+import { DataService } from 'src/app/services/data/data.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,6 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+  sarchText: string = '';
   searchInput!: string;
   //router: any;
   searchInputchange(event : any) : void{
@@ -15,9 +17,10 @@ export class NavbarComponent {
   }
   clearInput() : void{
     this.searchInput='';
+
   }
 
-  constructor(private  os :OpensidenvService  , private router :Router){}
+  constructor(private  os :OpensidenvService  , private router :Router, private dataService:DataService){}
   flag ='false';
 
   opensidenav(){
@@ -37,7 +40,13 @@ export class NavbarComponent {
     localStorage.removeItem('id');
   }
 
-  searchinput  :string =""; 
+  // searchinput  :string =""; 
+  onSearch(){
+    console.log(this.searchInput);
+
+    this.dataService.updateData(this.searchInput);
+
+  }
 
 
 

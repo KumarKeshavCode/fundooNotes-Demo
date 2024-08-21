@@ -3,7 +3,7 @@
 </head>
 
 <div style="display:flex; flex-wrap: wrap; gap: 30px;">
-    <mat-card style="width:200px;height:200px ; display: flex; justify-content: space-between; padding: 10px;" *ngFor="let note of notesList">
+    <mat-card style="width:200px;height:200px ; display: flex; justify-content: space-between; padding: 10px;" *ngFor="let note of notesList | search:searchInput">
         <!-- <span class="material-symbols-outlined">
             keep
             </span> -->
