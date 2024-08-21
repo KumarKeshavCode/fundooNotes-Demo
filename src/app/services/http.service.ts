@@ -24,10 +24,18 @@ export class HttpService {
   }
 
 
+
+   newuser(data:any){
+    console.log("working")
+    console.log(data)
+    return this.http.post("https://fundoonotes.incubation.bridgelabz.com/api/user/userSignUp",data)
   
-  SignUp(signupData: any) : Observable<any>{
-    console.log("API for Signup is working");
-    return this.http.post('https://fundoonotes.incubation.bridgelabz.com/api/user/userSignUp', signupData);
   }
+
+  
+  // SignUp(signupData: any) : Observable<any>{
+  //   console.log("API for Signup is working");
+  //   return this.http.post('https://fundoonotes.incubation.bridgelabz.com/api/user/userSignUp', signupData);
+  // }
   
 }

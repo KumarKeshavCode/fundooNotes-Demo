@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class LoginserviceService {
+// import { Httpclien } 
 
-  constructor() { }
-}
+// @Injectable({
+//   providedIn: 'root'
+// // })
+// // export class LoginserviceService {
+
+// //   constructor() { } 
+// // }
 
 
